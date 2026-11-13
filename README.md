@@ -1,5 +1,11 @@
 # P2P for Android
 
+## Latest test build
+
+**[Download P2P Test 0.7.9 for ARM64 Android phones](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.9/P2P-0.7.9-ARM64-Test.apk)**
+
+Updates an existing P2P Test installation. It can also be installed alongside regular P2P. [Test release notes](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.9)
+
 ## Stable release
 
 **[Download P2P 0.7.4 for ARM64 Android phones](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.4/P2P-0.7.4-arm64.apk)**
