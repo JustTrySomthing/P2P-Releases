@@ -1,9 +1,9 @@
-# P2P-Releases
+# P2P for Android
 
-Official P2P Android release downloads and in-app update feed
+## Stable release
 
-**[Download P2P 0.6.1 APK](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.6.1/P2P-0.6.1-arm64.apk)**
+**[Download P2P 0.7.4 for ARM64 Android phones](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.4/P2P-0.7.4-arm64.apk)**
 
-For 64-bit ARM phones running Android 12 or newer.
+Requires Android 12 or newer. For an x86-64 Android device or emulator, [download the x86-64 APK](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.4/P2P-0.7.4-x86_64.apk).
 
-[Release notes and assets](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.6.1)
+[Stable release notes](https://github.com/JustTrySomthing/P2P-Releases/releases/latest)
