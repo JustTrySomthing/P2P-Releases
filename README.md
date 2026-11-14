@@ -1,11 +1,13 @@
 # P2P for Android
 
-**[Download the latest APK — 0.7.23-rc28](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc28/P2P-0.7.23-rc28-ARM64-Preview.apk)**
+**[Download the latest APK — 0.7.23-rc29](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc29/P2P-0.7.23-rc29-ARM64-Preview.apk)**
 
-Version **0.7.23-rc28 (64)** · ARM64 · Android 12 or later · 93 MB
+Version **0.7.23-rc29 (65)** · ARM64 · Android 12 or later · 141 MB
 
-**Clean install required:** uninstall the older P2P Preview first, then install rc28 on both phones. This recovery uses a replacement signing key; uninstalling removes local app data. Future updates will reuse the saved rc28 key.
+**Update directly over rc28—do not uninstall.** rc29 uses the same signing key and preserves app data. Users on rc27 or earlier need the one-time clean install introduced by rc28.
 
-[Release notes](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc28) · [Complete source and rebuild files](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc28/P2P-0.7.23-rc28-Source.zip)
+Fixes the rc28 Talk startup crash caused by removed JNI Zero helpers. Code/resource shrinking is disabled. Native crash reports are readable again. Only the same two built-in voices are included.
 
-95 automated tests passed. Signature and package checks passed. Physical two-phone calling and background behavior still need device verification.
+[Release notes](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc29) · [Complete source and rebuild files](https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc29/P2P-0.7.23-rc29-Source.zip)
+
+98 automated tests passed. Signed APK bootstrap and signature checks passed. Physical two-phone calling still needs device verification.
