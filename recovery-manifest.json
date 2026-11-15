@@ -1,30 +1,30 @@
 {
-  "version": "0.7.23-rc40",
-  "version_code": 76,
+  "version": "0.7.23-rc42",
+  "version_code": 78,
   "package": "app.p2p.preview",
-  "source_commit": "929c7ef8f21585918c7d075507234ff9fffd0d7c",
+  "source_commit": "11ea5e710570079f9b22241d9ccc7bef1201639f",
   "checkpoint_date": "2026-11-15",
   "signing_certificate_sha256": "39e8ffec3e664cfd6b3865aa68e8ee43f9707fc8d7bbb14248a363f093314d13",
   "private_signing_backup": "P2P-rc28-PRIVATE-Signing-Recovery.zip (owner private backup; never publish)",
   "automated_validation": {
-    "tests": 112,
+    "tests": 113,
     "failures": 0,
     "errors": 0,
     "lint_errors": 0,
     "release_apk_bootstrap": "passed",
     "release_signature": "passed"
   },
-  "physical_device_validation": "Social media playback and Talk notifications remain unverified on a physical device.",
+  "physical_device_validation": "No physical-device check was performed for this build.",
   "assets": {
-    "P2P-0.7.23-rc40-ARM64-Preview.apk": {
-      "sha256": "60ab6a2eee49d9b526af3ee8742a58a0e83bc63db1f62fce5ab5ec8fd3f0fbd3",
-      "bytes": 140925726,
-      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc40/P2P-0.7.23-rc40-ARM64-Preview.apk"
+    "P2P-0.7.23-rc42-ARM64-Preview.apk": {
+      "sha256": "1e66dc05551cd243dd6c1555fdeed5061a43cad40a7502b16b80750dc39e7ac9",
+      "bytes": 140934802,
+      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc42/P2P-0.7.23-rc42-ARM64-Preview.apk"
     },
-    "P2P-0.7.23-rc40-Workspace-Recovery.zip": {
-      "sha256": "c931854ddf3cc87858217745559c28578e9f280fd25ee27d9b5ccaa3f8e80be7",
-      "bytes": 125633386,
-      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc40/P2P-0.7.23-rc40-Workspace-Recovery.zip"
+    "P2P-0.7.23-rc42-Workspace-Recovery.zip": {
+      "sha256": "01379be8732c132c087def3959d03e2bebfd0470f4cfe9cfcfac92a0619a0d78",
+      "bytes": 125635600,
+      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc42/P2P-0.7.23-rc42-Workspace-Recovery.zip"
     }
   }
 }

@@ -1,6 +1,18 @@
 # P2P project state — 2026-11-15
 
-Current release: rc40 (76). The rc30 device report established one successful call on that build. Playback, calling, and background delivery on rc40 still require device verification.
+Current release: rc42 (78). The rc30 device report established one successful call on that build. Playback, call alerts, and background delivery on rc42 still require device verification.
+
+## rc42 clear recent calls
+
+- Talk aligns the Recent calls heading left and the Clear recent button right. Confirmation clears the device's call history while keeping voicemail.
+- All 113 automated tests passed. Android lint reported zero errors. The signed APK passed the signing and WebRTC startup packaging checks. The Talk layout and history-clearing flow passed the automated UI check.
+
+## rc41 shared toolbar and app-wide mute
+
+- The same Bell, Search, Contacts, and Settings actions appear on the main pages, in conversations, and throughout Settings and Contacts. Search follows the current screen. Pins stay with the conversation list and menus.
+- The app-wide mute clears existing app alerts, suppresses future alerts and automatic update prompts, and stops the Talk ringtone. Android's silent ongoing call and file-transfer indicators continue to track their active services.
+- Talk centers Recent calls in a themed pill and places each date and divider in a slim opaque strip.
+- All 113 automated tests passed. Android lint reported zero errors. The signed APK passed the signing and WebRTC startup packaging checks. Notification and call ringtone behavior still needs physical-device verification.
 
 ## rc40 Social media and page notification controls
 
