@@ -1,6 +1,13 @@
-# P2P project state — 2026-11-14
+# P2P project state — 2026-11-15
 
-Current release: rc39 (75). The rc30 device report established one successful call on that build. Real calling and background delivery on rc39 still require device verification.
+Current release: rc40 (76). The rc30 device report established one successful call on that build. Playback, calling, and background delivery on rc40 still require device verification.
+
+## rc40 Social media and page notification controls
+
+- Social posts show inline photo previews, GIF and video thumbnails with Play controls, and playable audio rows. An available file with an unextractable video frame still has a Play control. Playback and preview support depend on the device and player codecs.
+- My posts sits on an opaque themed label. Start a chat and Create a group use the Add friend button style and open the existing sheets.
+- Chats, Groups, and Talk have independent persistent mute bells. Chat and group mutes suppress alerts for their own messages, reactions, and attachments. A muted Talk call skips foreground ringing and keeps a silent notification with Answer and Decline in the background.
+- All 112 automated tests passed. Android lint reported zero errors. The signed APK passed the signing and WebRTC startup packaging checks. Media codecs and call alert behavior remain unverified on a physical device.
 
 ## rc39 system bars and page transitions
 
