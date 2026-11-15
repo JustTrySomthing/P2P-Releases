@@ -1,6 +1,18 @@
 # P2P project state — 2026-11-14
 
-Current release: rc37 (73). The rc30 device report established one successful call on that build. Real calling and background delivery on rc37 still require device verification.
+Current release: rc39 (75). The rc30 device report established one successful call on that build. Real calling and background delivery on rc39 still require device verification.
+
+## rc39 system bars and page transitions
+
+- Full-screen settings and Contacts are in-app pages with a shared toolbar and wallpaper. Page switches reuse the activity window.
+- The top bar covers the status inset and a solid strip covers the bottom navigation inset when the tab bar is absent. The main navigation keeps drafts and scroll state when temporarily replaced by a full-screen page.
+- All 110 automated tests passed, including repeat Settings and Contacts switches using the same toolbar and draft restoration on return to a thread. Android lint reported zero errors. The signed preview passed the WebRTC bootstrap and signing certificate checks. Physical-device layout remains unverified.
+
+## rc38 neutral surfaces preview
+
+- Neutral cards and outgoing message bubbles use the same gray in each theme. The selected accent still colors actions and received messages.
+- Empty folder, conversation, and Social screens center the empty-state bubble in the content area. Empty Talk history and contact, voicemail, and block-list messages share the same treatment.
+- All 109 automated tests passed, including empty-state position checks on compact, tall, and landscape layouts. Android lint reported zero errors. The signed preview passed the WebRTC bootstrap and signing certificate checks. Physical-device layout remains unverified.
 
 ## rc37 preview
 

@@ -1,30 +1,30 @@
 {
-  "version": "0.7.23-rc37",
-  "version_code": 73,
+  "version": "0.7.23-rc39",
+  "version_code": 75,
   "package": "app.p2p.preview",
-  "source_commit": "4fcf622148cdbd38f6481f1fdabda9a6b975106d",
+  "source_commit": "f2039599803a6ca88b37b86f5ee8b82c3bb956fa",
   "checkpoint_date": "2026-11-14",
   "signing_certificate_sha256": "39e8ffec3e664cfd6b3865aa68e8ee43f9707fc8d7bbb14248a363f093314d13",
   "private_signing_backup": "P2P-rc28-PRIVATE-Signing-Recovery.zip (owner private backup; never publish)",
   "automated_validation": {
-    "tests": 109,
+    "tests": 110,
     "failures": 0,
     "errors": 0,
     "lint_errors": 0,
     "release_apk_bootstrap": "passed",
     "release_signature": "passed"
   },
-  "physical_device_validation": "Unverified on rc37. The owner confirmed one successful Talk call on rc30.",
+  "physical_device_validation": "Layout, transitions, Talk, and background delivery remain unverified on rc39. The owner confirmed one successful Talk call on rc30.",
   "assets": {
-    "P2P-0.7.23-rc37-ARM64-Preview.apk": {
-      "sha256": "2dbe82eb72c648c64a173a4a5eb6134cca164d45299cda223f4effe7bb7cf4df",
-      "bytes": 140925614,
-      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc37/P2P-0.7.23-rc37-ARM64-Preview.apk"
+    "P2P-0.7.23-rc39-ARM64-Preview.apk": {
+      "sha256": "a7989915ec33aa94746ed47b0f25865d69301b31dc959a7044dd6875cc34917e",
+      "bytes": 140901502,
+      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc39/P2P-0.7.23-rc39-ARM64-Preview.apk"
     },
-    "P2P-0.7.23-rc37-Workspace-Recovery.zip": {
-      "sha256": "85859176ee9e2c6c176f646665ce4d0650f5b1f0a5c7eb4008caa64d915ee917",
-      "bytes": 125628705,
-      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc37/P2P-0.7.23-rc37-Workspace-Recovery.zip"
+    "P2P-0.7.23-rc39-Workspace-Recovery.zip": {
+      "sha256": "ed4d00b29688bc66f78c2244b707adf45423e789a4c3910bf8d1fd10a8f5c013",
+      "bytes": 125630897,
+      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc39/P2P-0.7.23-rc39-Workspace-Recovery.zip"
     }
   }
 }

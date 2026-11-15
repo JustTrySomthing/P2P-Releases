@@ -4,15 +4,16 @@ This repository and its named recovery asset are the starting point when the loc
 
 ## Current baseline
 
-- **P2P 0.7.23-rc37 (73)**, package `app.p2p.preview`, ARM64, Android 12 or later.
-- 109 automated tests passed, Android lint reported zero errors, and APK signature and WebRTC bootstrap checks passed.
-- Physical two-phone calling and background delivery remain unverified on rc37. The owner confirmed one successful call on rc30 on November 14, 2026.
+- **P2P 0.7.23-rc39 (75)**, package `app.p2p.preview`, ARM64, Android 12 or later.
+- Settings and Contacts share one toolbar. System bar backgrounds are solid. Neutral cards share the outgoing message bubble color, and empty folders and feeds use centered status bubbles.
+- 110 automated tests passed, Android lint reported zero errors, and APK signature and WebRTC bootstrap checks passed.
+- Physical-device layout, two-phone calling, and background delivery remain unverified on rc39. The owner confirmed one successful call on rc30.
 - The release repository stores documentation and downloadable assets. The named workspace recovery ZIP holds the Android source.
 - Future updates must increase the version code and reuse the same signing certificate.
 
 ## Recover the workspace
 
-1. Download **P2P-0.7.23-rc37-Workspace-Recovery.zip** from [the rc37 release](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc37). Use the named asset, NOT GitHub's automatic Source code ZIP.
+1. Download **P2P-0.7.23-rc39-Workspace-Recovery.zip** from [the rc39 release](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc39). Use the named workspace recovery asset.
 2. Check its SHA-256 against recovery-manifest.json in this repository. Extract it into a new directory. It contains the editable P2P Android workspace, Gradle wrapper/configuration, Rust reference sources, bundled ARM64 native libraries, wallpapers, the two speech voices, regression tests, and build/recovery documentation.
 3. Run `python3 P2P/scripts/verify-recovery.py` to verify the bundled file manifest. Read P2P/AGENTS.md, P2P/REBUILD.md, and P2P/docs/PROJECT-STATE.md before editing.
 4. Restore the private signing backup described below. Confirm the certificate fingerprint BEFORE producing an update.
