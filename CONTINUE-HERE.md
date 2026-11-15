@@ -2,19 +2,17 @@
 
 This repository and its named recovery asset are the starting point when the local workspace or chat history is unavailable. Do not ask the owner to locate source before following this procedure.
 
-## Current baseline — 2026-11-14
+## Current baseline
 
-- Released app: **0.7.23-rc30 (66)**, package **app.p2p.preview**, ARM64, Android 12+.
-- Owner reported that calling worked on rc30 on 2026-11-14. This is user-confirmed calling, not an exhaustive device test.
-- 101 automated tests passed; signed APK JNI bootstrap and signature checks passed.
-- Source commit in the development workspace: b035346. The release repository's tag commit contains release documentation, not the Android source.
-- rc28 was reconstructed from surviving rc9 source and rc27 shipped native/media assets. Do not claim the original rc27 Kotlin workspace was recovered.
-- No application edits are pending from this recovery-documentation task. No APK rebuild/version bump is needed for these documentation additions.
-- Next release must use a versionCode greater than 66 and the SAME signing certificate.
+- **P2P 0.7.23-rc37 (73)**, package `app.p2p.preview`, ARM64, Android 12 or later.
+- 109 automated tests passed, Android lint reported zero errors, and APK signature and WebRTC bootstrap checks passed.
+- Physical two-phone calling and background delivery remain unverified on rc37. The owner confirmed one successful call on rc30 on November 14, 2026.
+- The release repository stores documentation and downloadable assets. The named workspace recovery ZIP holds the Android source.
+- Future updates must increase the version code and reuse the same signing certificate.
 
 ## Recover the workspace
 
-1. Download **P2P-0.7.23-rc30-Workspace-Recovery.zip** from [the rc30 release](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc30). Use the named asset, NOT GitHub's automatic Source code ZIP.
+1. Download **P2P-0.7.23-rc37-Workspace-Recovery.zip** from [the rc37 release](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc37). Use the named asset, NOT GitHub's automatic Source code ZIP.
 2. Check its SHA-256 against recovery-manifest.json in this repository. Extract it into a new directory. It contains the editable P2P Android workspace, Gradle wrapper/configuration, Rust reference sources, bundled ARM64 native libraries, wallpapers, the two speech voices, regression tests, and build/recovery documentation.
 3. Run `python3 P2P/scripts/verify-recovery.py` to verify the bundled file manifest. Read P2P/AGENTS.md, P2P/REBUILD.md, and P2P/docs/PROJECT-STATE.md before editing.
 4. Restore the private signing backup described below. Confirm the certificate fingerprint BEFORE producing an update.
@@ -50,3 +48,4 @@ A public certificate or fingerprint alone cannot sign updates. If private access
 - Verify uploaded asset hashes and that the source archive contains wrapper, Kotlin source, native libraries and media. Record actual tests separately from user reports.
 - Keep the private key backup available, unchanged, and separately protected. Never publish credentials, passwords, private identities/messages, local configuration or account databases.
 - Preserve previous recovery checkpoints; do not silently overwrite an earlier release's source with later code.
+
