@@ -1,6 +1,25 @@
 # P2P project state — 2026-11-15
 
-Current release: rc42 (78). The rc30 device report established one successful call on that build. Playback, call alerts, and background delivery on rc42 still require device verification.
+Current release: rc45 (81). Live QR scanning between phones still needs physical-device verification.
+
+## rc45 contact invite card
+
+- Send invite shows a larger QR code on a rounded white card, with the profile photo or initial above the code and a personalized scan label below it. The card shows when the invite expires.
+- Copy code and Share transfer the full invite. The QR can still open in a larger scan view. The existing signed invite format is preserved.
+- All 115 automated tests passed. Android lint reported zero errors. The signed APK passed the signing and WebRTC startup packaging checks. The invite test checked the scan label, hidden raw code, clipboard contents, and share payload.
+
+## rc44 contextual actions and reply reminders
+
+- Long presses open a themed action dialog on chat and group conversations, message bubbles, and Social posts. The dialog offers actions that apply to the item and its current state.
+- Reply reminders offer one hour, one day, or one week. A reminder opens the conversation or the post reply composer.
+- The Android job persists across device restarts. Reminder alerts follow global notification mute and quiet hours.
+- All 115 automated tests passed. Android lint reported zero errors. The signed APK passed the signing and WebRTC startup packaging checks. Automated tests covered long-press actions, unread state, attachment downloads, and persisted reply reminder scheduling.
+
+## rc43 Talk controls and animated WebP
+
+- Clear recent uses the Recent calls surface and label colors. The circular phone button is the only redial control in each history row.
+- Animated WebP images retain the original bytes during attachment preparation. They use the GIF playback path in chat and the media viewer, with a Play button in Social posts. Static WebP images keep the photo viewer.
+- All 114 automated tests passed. Android lint reported zero errors. The signed APK passed the signing and WebRTC startup packaging checks. Automated tests covered redial targets, animated WebP preservation, and the Social playback control.
 
 ## rc42 clear recent calls
 
