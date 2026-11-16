@@ -1,13 +1,13 @@
 {
-  "version": "0.7.23-rc42",
-  "version_code": 78,
+  "version": "0.7.23-rc45",
+  "version_code": 81,
   "package": "app.p2p.preview",
-  "source_commit": "11ea5e710570079f9b22241d9ccc7bef1201639f",
+  "source_commit": "bc3049fce151f4ec01f2604df984ff8c9bf28633",
   "checkpoint_date": "2026-11-15",
   "signing_certificate_sha256": "39e8ffec3e664cfd6b3865aa68e8ee43f9707fc8d7bbb14248a363f093314d13",
   "private_signing_backup": "P2P-rc28-PRIVATE-Signing-Recovery.zip (owner private backup; never publish)",
   "automated_validation": {
-    "tests": 113,
+    "tests": 115,
     "failures": 0,
     "errors": 0,
     "lint_errors": 0,
@@ -16,15 +16,15 @@
   },
   "physical_device_validation": "No physical-device check was performed for this build.",
   "assets": {
-    "P2P-0.7.23-rc42-ARM64-Preview.apk": {
-      "sha256": "1e66dc05551cd243dd6c1555fdeed5061a43cad40a7502b16b80750dc39e7ac9",
-      "bytes": 140934802,
-      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc42/P2P-0.7.23-rc42-ARM64-Preview.apk"
+    "P2P-0.7.23-rc45-ARM64-Preview.apk": {
+      "sha256": "4e1f15bae5503771aec7e097ea0b6e692c1161560a3e7629a23426de5b8cf3d7",
+      "bytes": 140965246,
+      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc45/P2P-0.7.23-rc45-ARM64-Preview.apk"
     },
-    "P2P-0.7.23-rc42-Workspace-Recovery.zip": {
-      "sha256": "01379be8732c132c087def3959d03e2bebfd0470f4cfe9cfcfac92a0619a0d78",
-      "bytes": 125635600,
-      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc42/P2P-0.7.23-rc42-Workspace-Recovery.zip"
+    "P2P-0.7.23-rc45-Workspace-Recovery.zip": {
+      "sha256": "e7dc2378ec6b0e293c53b0f5fef7a390e69564f8077ccaaa7462130f80338085",
+      "bytes": 125643603,
+      "url": "https://github.com/JustTrySomthing/P2P-Releases/releases/download/v0.7.23-rc45/P2P-0.7.23-rc45-Workspace-Recovery.zip"
     }
   }
 }
