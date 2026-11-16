@@ -4,16 +4,16 @@ This repository and its named recovery asset are the starting point when the loc
 
 ## Current baseline
 
-- **P2P 0.7.23-rc42 (78)**, package `app.p2p.preview`, ARM64, Android 12 or later.
-- The toolbar has an app-wide mute bell and consistent controls. Talk has a Clear recent button that clears local call history after confirmation and keeps voicemail.
-- 113 automated tests passed, Android lint reported zero errors, and APK signature and WebRTC bootstrap checks passed.
-- Call ringtone behavior and the Talk layout still need physical-device verification on rc42.
+- **P2P 0.7.23-rc45 (81)**, package `app.p2p.preview`, ARM64, Android 12 or later.
+- Contact invites show a larger QR card with a profile image or initial, a personalized scan label, and Copy code and Share buttons.
+- 115 automated tests passed, Android lint reported zero errors, and APK signature and WebRTC bootstrap checks passed.
+- Live QR scanning between phones still needs physical-device verification.
 - The release repository stores documentation and downloadable assets. The named workspace recovery ZIP holds the Android source.
 - Future updates must increase the version code and reuse the same signing certificate.
 
 ## Recover the workspace
 
-1. Download **P2P-0.7.23-rc42-Workspace-Recovery.zip** from [the rc42 release](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc42). Use the named workspace recovery asset.
+1. Download **P2P-0.7.23-rc45-Workspace-Recovery.zip** from [the rc45 release](https://github.com/JustTrySomthing/P2P-Releases/releases/tag/v0.7.23-rc45). Use the named workspace recovery asset.
 2. Check its SHA-256 against recovery-manifest.json in this repository. Extract it into a new directory. It contains the editable P2P Android workspace, Gradle wrapper/configuration, Rust reference sources, bundled ARM64 native libraries, wallpapers, the two speech voices, regression tests, and build/recovery documentation.
 3. Run `python3 P2P/scripts/verify-recovery.py` to verify the bundled file manifest. Read P2P/AGENTS.md, P2P/REBUILD.md, and P2P/docs/PROJECT-STATE.md before editing.
 4. Restore the private signing backup described below. Confirm the certificate fingerprint BEFORE producing an update.
@@ -23,7 +23,7 @@ This repository and its named recovery asset are the starting point when the loc
 
 ## Signing recovery — private, required for upgrades
 
-Public GitHub intentionally does not contain the key or password. The complete existing private backup is named **P2P-rc28-PRIVATE-Signing-Recovery.zip** in the owner's ChatGPT Library. Search that exact filename using the owner's connected Library; it contains p2p-release.p12, password.txt, and RECOVERY.txt. This backup was saved on 2026-11-14. Do not publish its contents or print its password.
+For signed updates, restore the existing key and password from the owner's private signing backup. Verify the certificate fingerprint against the release manifest.
 
 Set P2P_KEYSTORE to the recovered .p12 absolute path, and P2P_KEY_PASSWORD to the password through a private environment variable. Alias: p2p.
 
